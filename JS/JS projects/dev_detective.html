@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Detective</title>
+    <link rel="stylesheet" href="dev_detective.css">
+    <link rel="shortcut icon" href="./assets-dev-detective/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="wrapper">
+              <!--navbar-->
+            <div class="nav">
+                <h1 class="heading">DevDetective</h1>
+                <button class="mode-btn">
+                    <p class="mode">Dark</p>
+                    <img src="./assets-dev-detective/images/moon-icon.svg" alt="" class="mode-img">
+                </button>
+                
+            </div>
+
+            <!--search bar-->
+            <form class="search-container">
+                <input type="text" placeholder="Enter a GitHub username..." name="search-user" id="search-user" required search-input>
+                <p class="not-found">Dev not found</p>
+                <button class="search-btn" type="submit">Search</button>
+            </form>
+
+            <!--dev info-->
+            <div class="dev-info-container">
+
+                <!--dev basic info-->
+                <div class="dev-head">
+                    <img dev-img>
+                    
+                    <div class="dev-head-info">
+                        <h2 dev-name></h2>
+                        <a dev-github></a>
+                        <p dev-bio></p>
+                    </div>
+
+                    <p dev-join-date></p>
+                </div>
+
+                <!--followers,repo etc-->
+                <div class="profile-stat-container">
+                    <div class="stats">
+                        <p>Repos</p>
+                        <p repos></p>
+                    </div>
+
+                    <div class="stats">
+                        <p>Followers</p>
+                        <p followers></p>
+                    </div>
+
+                    <div class="stats">
+                        <p>Following</p>
+                        <p following></p>
+                    </div>
+                </div>
+
+                <!--more-info and links-->
+                <div class="more-info-container">
+                    <p city></p>
+                    <a bio-link class="link"></a>
+                    <a X class="link"></a>
+                    <p workplace></p>
+                </div>
+
+            </div>
+        </div>
+
+      
+        
+    </div>
+
+    <script src="dev_detective.js"></script>
+
+</body>
+</html>

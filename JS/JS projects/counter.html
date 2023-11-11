@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COUNTER APP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="flex items-center justify-center w-[100vw] h-[100vh] flex-col bg-[#344151] gap-10">
+        <h2 class="text-[#0398d4] font-medium text-[20px]">Increment and Decrement</h2>
+        <div class="bg-white flex text-[25px] text-[#344151] rounded-sm gap-12 p-3 px-5">
+            <button onclick="decrement()" class="border-r-2 border-[#bfbfbf] pr-5"> <!--button click hua hai ya nhi woh event listener se bhi pta kr skte hai ,m ek aur tareeka hai button ke pass ek attribute hota hai onclick , iss on click ko  jiss function ke equal krenge woh execute hojayega button pe click krne pe-->
+                <i class="fa-solid fa-minus"></i>
+            </button>
+            <div class="font-bold" id="counter">
+                0
+            </div>
+            <button onclick="increment()" class="border-l-2 border-[#bfbfbf] pl-5">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="counter.js"></script>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script> <!--iss line ka meaning jane-->
+</body>
+</html>
