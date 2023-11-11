@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="email">Enter email id</label>
+        <input type="email" id="email"  placeholder="Enter you email id"> <!--the type attribute specifies the type of <input> element to display.-->
+        <br/>
+        </br>
+        <label for="password">Enter password</label>
+        <input type="password" id="password" placeholder="password dalo">
+        </br>
+        <input type="submit" value="Click here">
+    </form>
+    <br/>
+    <br/>
+    <form>
+        <fieldset>
+            <legend>Giddu ji ka form</legend>
+            <label for="datepicker">DOB:</label>
+            <input type="date" id="datepicker">
+            </br>
+            <br/>
+            <label for="s1">Choose your dish</label>
+            <select name="dishes" id="s1"> <!--The HTML <form> name Attribute is used to specify the name of a form Element. It is used to reference the form-data after submitting the form or to reference the element in a JavaScript. 
+
+Syntax: -->
+                <option value="maggi">Maggi</option><!--The value attribute specifies the value to be sent to a server when a form is submitted. The content between the opening <option> and closing </option> tags is what the browsers will display in a drop-down list. However, the value of the value attribute is what will be sent to the server when a form is submitted.--> 
+                <option value="kurkure">Kurkure</option>
+                <option value="Pizza">Pizza</option>
+            </select>
+
+            <button>Main hu button</button>
+            <br>
+            <br>
+            <textarea name="text1" id="t1" cols="30" rows="10" placeholder="enter text here"></textarea> <!--cols and rows are used to set the size of text area-->
+        </fieldset>
+
+        <fieldset>
+            <legend>Gender</legend>
+            <label for="r1">Male</label>
+            <input type="radio" name="Male" id="r1">
+            <br>
+            <br>
+            <label for="r2">Female</label>
+            <input type="radio" name="Female" id="r2">
+            <br>
+            <br>
+            <label for="r3">Others</label>
+            <input type="radio" name = "Others" id = "r3">
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <legend>Language</legend>
+            <label for="c1">Hindi</label>
+            <input type="checkbox" id="c1" name="Hindi">
+            <br>
+            <br>
+            <label for="c2">English</label>
+            <input type="checkbox" id="c2" name="English">
+        </fieldset>
+        <br>
+        <br>
+        <label for="f1">Upload CV</label>
+        <input type="file" name = "CV" id="f1">
+        <br>
+        <br>
+        <input type="image" name="arrow" id="img1" alt="Click" src="Arrow_right.svg.png" width="20px" height="20px"> <!--Agar same folder main img na ho toh path dalo src main-->
+
+    </form>
+</body>
+</html>

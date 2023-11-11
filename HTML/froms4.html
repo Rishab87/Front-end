@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giddu Form</title>
+</head>
+<body>
+    <h2>Giddu Login</h2>
+    <form>
+        <label for="name">Username:</label>
+        <input type="text" name="name" id = "name">
+        <br>
+        <label for="pass">Password:</label>
+        <input type="password" name="password" id = "pass">
+        <br>
+        <label for="city">City of <br> Employment:</label>
+        <input type="text" name="city" id = "city">
+        <br>
+        <br>
+        <label for="web">Web Server:</label>
+        <select id="web" name="server">
+            <option selected disabled>--Choose a web server--</option>
+            <option value="Google">Google</option>
+            <option value="Amazon">Amazon</option>
+            <option value="Microsoft">Microsoft</option>
+        </select>
+        <br>
+        <br>
+        <span>Please specify <br> your role:</span>
+        <input type="radio" name="r" id="admin">
+        <label for="admin">Admin</label>
+        <br>
+        <input type="radio" name="r" id="engineer">
+        <label for="engineer">Engineer</label>
+        <br>
+        <input type="radio" name="r" id="manager">
+        <label for="manager">Manager</label>
+        <br>
+        <br>
+        <span>Single sign on <br> to the following:</span>
+        <input type="checkbox" name="checkbox" id="mail">
+        <label for="mail">Mail</label>
+        <br>
+        <input type="checkbox" name="checkbox" id="payroll">
+        <label for="payroll">Payroll</label>
+        <br>
+        <input type="checkbox" name="checkbox" id="self">
+        <label for="self">Self-Service</label>
+        <br>
+        <br>
+        <pre>
+            <input type= "submit" value="Login"> <input type= "submit" value="Register">
+        </pre>
+
+
+
+    </form>
+</body>
+</html>

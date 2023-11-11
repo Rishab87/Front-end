@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="background-color: aqua;">This is my first heading</h1> <!--h1 zyada badi hoti hai h2 se pr hum usse css ki properties se barabar kr skte hai toh hume visually compare nhi krna hai-->
+    <h2 style="color: yellowgreen;">This is my second heading</h2><!--h1 ki importance h2 se zyada hai aise inke meaning ke basis pr compare krna hai h1,h2,h3etc ko size ke basis pr nhi-->
+    <a href="#H3">Jump to third heading</a><!--A bookmark , we can specify id in any html element and then put #id in href in anchor tag and if our element is on the next page we can also add link for that-->
+    <h4>This is my fourth heading</h4> 
+    <h5>This is my fifth heading</h5>
+    <h6>This is my sixth heading</h6>
+    <h7>7th heading</h7> <!--yeh para ki trah behave krega isliye h6 tak hi heading bnaye-->
+
+    <p>this is my first para</p>
+
+    <a href="https://www.google.com">GOOGLE</a> <!--We can create hyperlinks,bookmarks(matlab ussi page pr kisi specific jagah lejayega bookmark. eg references name ka bookmark hai jo referrences heading pe le gya web page pe,agar multiple sections ho webpage pe toh use kr skte hai uss section tak jaane ke liye) and also helpful in sending mail,also helpful in adding phone no. with anchor tag-->
+    <a href="mailto: kumarjharishab@gmail.com">email</a>
+    <a href="tel:10100101010">Call Us</a>
+    <ul><!--Unordered list-->
+        <li>Maggi</li><!--List item-->
+        <li>Milk</li>
+        <li>Lays</li>
+    </ul>
+     <ol> <!--Shortcut to write this code ol>li*3-->
+            <li>Pani garam kro</li> <!--Ordered list aur unnordered list main difference yehh nhi hai ki unordered main bullets hai aur ol main numbering pts hai kyunki isse toh hum change kr skte hai ul main bhi numbering wale points dal skte hai-->
+            <li>Chai patti dalo</li><!--Difference yeh hai ki list item random order main dalna ho toh ul use kre aur agar list item order wise dalna ho toh ol use kre-->
+            <li>Chai peoo</li>
+    </ol>
+
+    <table><!--Shortcut to write the following code table>(tr>td*3)*4-->
+        <tr > <!--1st row-->
+            <td>Sr. no.</td>
+            <td>Name</td>
+            <td>Roll no.</td>
+        </tr>
+        <tr><!--2nd row-->
+            <td>1</td>
+            <td>Rishab</td>
+            <td>38</td>
+        </tr>
+        <tr><!--3rd row-->
+            <td>2</td>
+            <td>Giddu</td>
+            <td>12</td>
+        </tr>
+        <tr><!--4th Row-->
+            <td>3</td>
+            <td>Garv</td>
+            <td>11</td>
+        </tr>
+    </table>
+    <p>Lorem <b>ipsum</b>, <strong>potty</strong> sit amet <s>poo</s> <u>gidduji</u> consectetur adipisicing elit. Cumque vel quibusdam modi asperiores dolorum minima accusamus amet deserunt eligendi repellat. Quam minus iste facere maiores quibusdam molestiae unde esse voluptatibus alias ratione inventore, optio, iusto illo eius veritatis quis voluptatem nulla dolor. Recusandae possimus ipsum ipsam consequuntur aliquid perferendis molestiae.</p>
+        <!--bold aur strong se dono se hi text bold hojata hai farak yeh hai ki text to speech ki case main jo word strong ke andar likha hai uspr zyada zor diya jayega , em se word italic main ho jata hai aur strong ki trah em main bhi jo word em ke andar hai uspr zor diya jayega text to speech main-->
+        <!--To put a random text we can use lorem50 50 means 50 word we have to specify no. of words after writing lorem-->
+        <!--<s> tag ke andar jo word hai woh strike hojayega-->
+    <p>2<sup>5</sup></p><!--2 ke power 5 aajayega-->
+    <p>O<sub>2</sub></p><!--sub tag is subscript -->
+    <pre>hello
+                           hello
+        gidduji here
+    </pre><!--pre tag main hum jaise idhr text likhenge waise hi site ki UI pr show hoga. eg pre tag ke andar koi line dusre line se shuru kri hai without using br tag toh ui pr bhi dusri line pr hi line dekhegi -->
+    <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fassets.goal.com%2Fv3%2Fassets%2Fbltcc7a7ffd2fbf71f5%2Fbltee886584fd1cd345%2F60db8718892a730f5883a347%2F68a712aa7ffd3da7d91c2fe1469bda58990f7ab7.jpg%3Fauto%3Dwebp%26format%3Dpjpg%26width%3D3840%26quality%3D60&tbnid=4wf_m7ybC1OqVM&vet=12ahUKEwjqz9_1tsL_AhVhgmMGHTd7CgcQMygBegUIARDlAQ..i&imgrefurl=https%3A%2F%2Fwww.goal.com%2Fen%2Fnews%2Fwhy-did-cristiano-ronaldo-leave-real-madrid-for-juventus%2F1xzscq6gfxb8n15976p2yuyi8j&docid=Cku1fdcetkzfZM&w=3840&h=2160&q=cr7&ved=2ahUKEwjqz9_1tsL_AhVhgmMGHTd7CgcQMygBegUIARDlAQ" alt="CR7"><!--alt matlab agar kisi vjah se img render nhi ho rhi toh uski jgah woh text ajayega-->
+    <h3 id="H3">This is my third heading</h3> <!--The HTML id attribute is used to specify a unique id for an HTML element.-->
+</body>
+</html>
