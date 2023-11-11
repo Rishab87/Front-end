@@ -1,0 +1,20 @@
+div {
+    height: 100px;
+    width: 100px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: chartreuse;
+    background-color: orange;
+    text-align: center; /*text-align content ki ke width hisab se text align krta hai */
+    padding-top: 25px;
+    margin-top: 50px;
+}
+
+h1 {
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 1px 2px 3px 4px;
+    margin: 10px;
+}
+

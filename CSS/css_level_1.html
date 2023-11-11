@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Level 1</title>
+    <link rel="stylesheet" href="style.css"> <!--rel btata hai kis tareeke ke relation ke sath link kr rhe hai, href btata hai kisko link krna chahte ho,  agr alag folder main css file hoti toh pura path likhna pdta href main-->
+    <style> /* pehle style.css ko link kiya hua phir style tag  aa rha hai , matlab style tag style.css ke baad aa rha hai matlab priority zyada hogi agar style tag link ke uper hota toh style.css ki priority zyada hoti style tag ke  mukable*/
+        button {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 class = "myclass">Hellooooooooooooooooooooooooo!</h1>
+    <h2 id="h2">KAISE HO!</h2>
+    <p>Yeh ek para hai</p>
+    <button>click</button>
+    <p class="myclass">Gidduji</p>
+
+    <div id="box"> <!--practice set 1-->
+        <p>hellooooooooooooooooo ji</p>
+    </div>
+    <h1 class="heading">dsgds</h1>
+    <h2 class="heading">sdfsdf</h2>
+    <h3 class="heading">ssefsdf</h3>
+    <button style="background-color: pink;">click kro</button> <!--inline style ki sbse zyada priority hoti hai kyunki element ke sath hi likha hai , style tag aur style.css ke baad likha hai-->
+</body>
+</html>

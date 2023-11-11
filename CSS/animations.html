@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background-color: beige;
+            border: 2px solid black;
+        }
+        .box {
+            height: 50px;
+            width: 300px;
+            background-color: black;
+            border-radius: 10%;
+            border: 1px solid yellow;
+            margin: 10px;
+            /* animation-name: rightMovement; */
+            position: relative;
+            /* animation-duration: 10s ; animation complete krnne main kitna time lgega */
+            /* animation-iteration-count: 1; kitne bar animation repeat krna chahte  ho */
+            /* animation-delay: 2s; animation start krne se pehle kitna time ruko */
+            /*animation-timing-function: linear;same speed*/ /*specifies speed curve(speed curve matlab jaise animation starting main slow hia end main tez , ya end main slow start main tez , ya start end main tez beech main slow etc , This property allows a transition effect to change speed over its duration.
+) of the animation*/
+            /* animation-timing-function: ease-in; slow start dheere dheere tez end fast */
+            /* animation-timing-function: ease-in-out; slow start and slow end */
+            /* In CSS animations, the cubic-bezier timing function allows you to define custom acceleration and deceleration curves for your animations. It is a way to control how an animation progresses over time by specifying the easing function. */
+            /* animation-timing-function: cubic-bezier(0.1 , 0.7 , 1.0 , 0.1); We can create our own timing function using this , we can change this on graph and preview it while inspecting and then paste that values here , for more details read from chatgpt box-shadow chat */
+            /* The animation-direction property defines whether an animation should be played forwards, backwards or in alternate cycles. */
+            /*animation-direction: alternate;*/ /*we can control the direction of animation. eg jaakr wapas bhi aa rha hai*/
+            /* animation-direction: reverse; destination se se src tak chlega matlab animation ulta chlega iss case main right to left aur wapas nhi ayega */
+            /* animation-direction: alternate-reverse; dest se src pr wapas bhi ayega  */
+            /* animation-direction: normal; by default jaise hota hai src se dest ki traf , this is the default value */
+            /* animation-fill-mode: ; yeh btata hai ki animation start krne se pehle aur end ke baad kya krna hai */
+            /* animation-fill-mode: forwards; animation destination pr jaakr ruk jayega */
+            /* animation-fill-mode: backwards; animation-delay ke time bhi first keyframe ke properties apply rhengi animation kahatam hokr bhi wahi apply hongi , The element will get the style values that is set by the first keyframe (depends on animation-direction), and retain this during the animation-delay period*/
+            /* animation-fill-mode: both; animation-fill-mode: both combines animation-fill-mode: forwards, and animation-fill-mode: backwards. When animation-fill-mode: backwards is specified, values from the first keyframe in the animation are applied immediately when the animation begins even if there is an animation-delay. If fill-mode: backwards, or both is not specified, then the first keyframe is not applied until after the animation-delay. , matlab both main animation delay rehta hai tab bhi first keyframe ki values apply hojati hai aur phir animation end hone ke baad lastkeyframe ke value retain rkhta hai , dono ke rules follow krta hai  */
+            /* animation-play-state: paused;animation ko pause ya run krne ke liye use hota hai */
+            animation: 10s linear 2s infinite alternate none running rightMovement;/*shorthand , duration|timing-function|delay|iteration-count|direction|fill-mode|play-state|animation-name*/
+        }
+
+        .box2 {
+            height: 50px;
+            width: 300px;
+            background-color: black;
+            border-radius: 10%;
+            border: 1px solid yellow;
+            margin: 10px;
+            position: relative;
+            animation: 10s linear 2s infinite alternate none running leftMovement;
+        }
+
+        #circle {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border: 1px solid black;
+            position: relative;
+            border-radius: 50%;
+            margin: 10px;
+            top: 150px;
+            left: 730px;
+            animation: 10s ease-in-out 0s infinite alternate-reverse none running Circle;
+        }
+
+        @keyframes rightMovement {
+            from {
+                top: 0px;
+                left: 0px;
+            }
+            to {
+                top: 0;
+                left: 1300px;
+            }
+        }
+
+        @keyframes leftMovement {
+            from {
+                top: 550px;
+                left: 1300px;
+            }
+            to {
+                top: 550px;
+                left: 0px;
+            }
+        }
+        @keyframes Circle {
+            0% { /*0% matlab 0% of animation timline , matlab jab start ho rha hai*/
+                top: 1%;
+                left: 5%;
+                background-color: blue;
+            }
+            30% {
+                top: 5%;
+                left: 90%;
+                background-color: black;
+            }
+            60% {
+                top: 50%;
+                left: 10%;
+                background-color: yellow;
+            }
+            100% {
+                top: 55%;
+                left: 90%;
+                background-color: green;
+
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box2"></div>
+        <div id="circle"></div>
+    </div>
+</body>
+</html>

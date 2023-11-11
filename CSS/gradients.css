@@ -1,0 +1,36 @@
+.box {
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    /* background-image: linear-gradient( white , purple); by default direction of gradient is top to down */
+    /* background-image: linear-gradient(to right white , purple); left to right gradient  */
+    /* background-image: linear-gradient(to left , white , purple); right to left */
+    /* background-image: linear-gradient(to top ,  white , purple); bottom to top   */
+    /* background-image: linear-gradient(to bottom right ,  white , purple); from top left to bottom right  */
+    /* background-image: linear-gradient(to bottom left ,  white , purple);  */
+    /* background-image: linear-gradient(45deg ,  white , purple); we can also use angles */
+    background-image: linear-gradient(to bottom , rgba(255 , 55 , 10 , 0.5) , rgba(255,100,30,1)); /*through this we can also set transparency of color*/
+}
+
+.radial {
+    border: 1px solid black;
+    height: 100px;
+    width: 400px;
+    /* background-image: radial-gradient(circle,orange , yellow , green); ho skta hai kuch part trim hojaye pr circular form main aajyega */
+    background-image: radial-gradient(yellow 5% , orange 10% , red 50%); /*5% area yellow hai , 10% orange , 50% red*/
+}
+
+.conic {
+    border: 1px solid;
+    height: 100px;
+    width: 200px;
+    border-radius: 50%;
+    /* background-image: conic-gradient(red, green , yellow); */
+    background-image: conic-gradient(from 90deg , red 90deg , yellow 10deg , orange 210deg); /*here entire gradient is rotated by 90deg due to from 90deg*/ /*here deg with color specifies how much part a color will take , eg red is here 90 deg it will take 1/4th of circle*/
+    background-image: conic-gradient(at 60% 50%, red, yellow, green);/*position of center in this is at 60% of width* and 50%of height matlab jitna total width hai uska 60% lenge aur height ka 50% lenge udhr center hai/
+    /*By default, angle is 0deg and position is center.
+
+    If no degree is specified, the colors will be spread equally around the center point.
+    see all egs from w3schools , repeating conic gradients etc
+    */
+}

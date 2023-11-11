@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOG WEBSITE</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background-color: aquamarine;
+            overflow-y: auto;
+            overflow-x: hidden;
+            display: grid;
+
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 40px 867px 40px;
+
+            grid-gap: 10px;
+
+            grid-template-areas: 
+            "hd hd"
+            "sidebar content"
+            "footer footer";
+        }
+
+        .box{
+            background-color: yellowgreen;
+        }
+
+        #header{
+            grid-area: hd;
+        }
+        #sidebar{
+            grid-area: sidebar;
+        }
+        #content{
+            grid-area: content;
+        }
+        #footer{
+            grid-area: footer;
+        }
+
+        /*@media(max-width:400px){  jab max-width 400px se kam hoga tab andar ka code chlega
+         .container{
+            grid-gap: 100px;
+         }   
+        }*/
+
+        @media(max-width:500px){
+            .container{
+            grid-template-columns: 1fr;
+            grid-template-rows: 30px 1fr 1fr 30px;
+
+            grid-gap: 2px;
+
+            grid-template-areas: 
+            "hd"
+            "sidebar" "
+            content"
+            "footer";   
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="header">Header</div>
+        <div class="box" id="sidebar">Sidebar</div>
+        <div class="box" id="content">Content</div>
+        <div class="box" id="footer">Footer</div>
+    </div>
+</body>
+</html>

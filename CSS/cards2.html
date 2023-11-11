@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(2,0,36);
+            background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(5,5,28,1) 35%, rgba(42,126,143,1) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card {
+            height: 400px;
+            width: 900px;
+            display: flex;
+            background-color: white;
+            gap: 70px;
+        }
+
+        #statebox {
+            background-color: rgb(99, 7, 99);
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            height: inherit;
+            width: 50%;
+            color: white;
+            padding: 50px;
+        }
+
+        #imgbox {
+            width: 50%;
+            height: inherit;
+        }
+
+        #users {
+            display: flex;
+            justify-content: space-between;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div id="statebox">
+    
+                <h1>Get insights that help you buisness grow</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid quae doloribus sapiente veritatis possimus similique, sequi enim voluptates ipsum explicabo quis, molestias magni inventore quod, distinctio tenetur iste deserunt placeat.</p>
+
+                <div id="users">
+                    <div id="customers">
+                        <h1>10K+</h1>
+                        <span>customers</span>
+                    </div>
+                    <div id="paidusers">
+                        <h1>214</h1>
+                        <span>Paid Users</span>
+                    </div>
+                    <div id="views">
+                        <h1>12M+</h1>
+                        <span>Views</span>
+                    </div>
+                </div>
+
+            </div>
+        <div id="imgbox">
+            <img src="Work_7.jpg" alt="buisness"height = "400px">
+        </div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>auto-rows</title>
+    <style>
+        .container{
+            height: 700px;
+            border: 1px solid black;
+            gap: 20px;
+            background-color: yellow;
+            display: grid;
+            
+            grid-auto-rows: minmax(100px,auto);/*agar max-size of row fixed px main set krdiya toh element agar usse bda hoga toh overflow hojayega ya cut trim hojayeag
+            auto ka matlab, max row ka size apne ap adjust hojayega depending on kitne elements hai taki overflow na ho pr min 100px rahyega iss case main*/
+            /*is treeke se unkown no. of rows ho toh iss function se rows generate kra skte hai min aur max size ke sath*/
+            grid-template-columns: repeat(4,1fr);
+        }
+        /*grid-auto-rows htakr bhi same behaviour hai pr grid-auto-rows ka  use hai ki automatic jo rows add honge unka ek min max size define kr skte hai isse*/
+        /*jab unkown no.. of rows hoti hai waha pr grid-auto rows ka use krte hai. eg: facebook main agar grid layout ka use kiya hai toh usmain jab scroll krenge toh exact no. of rows fixed nhi hai , tab iss property ka use krenge*/
+        /*grid-auto-rows: minmax() func mainn row ka min size aur max size btaoge*/
+        .box{
+            border: 1px solid black;
+            background-color: aliceblue;
+        }
+
+        /*So, grid-auto-rows is especially useful when dealing with dynamic or unknown content and when you want to maintain consistent row sizing for these implicit rows. If you don't specify grid-auto-rows, the implicitly generated rows will have a default size (often auto, which adjusts to content), which might not be what you want in all cases.*/
+/*hw: grid-auto-columns*/
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

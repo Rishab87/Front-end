@@ -1,0 +1,46 @@
+p {
+    text-align: end;
+    font-size: 30px;
+    line-height: 50px;
+    text-transform: capitalize;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /*multiple font style likhne ka matlab ki agar manlo jo pehla font likha hai agar woh koi browser support nhi krta toh dusra font style apply hojayega, dusra jo font style dala hai agar koi browser woh bhi support nhi krta toh teesra jo font style dala hai woh apply hojayega...,isse fallback mechanism kehte hai ki agar manlo ek cheez fail hojaye toh dusra font apply krdo*/
+}
+
+h1 {
+    text-align: center;
+    text-decoration: green wavy underline overline;
+    font-weight: normal; 
+}
+
+a {
+    text-decoration: none;
+}
+
+#punto {
+    font-weight: bold; /*headings by default bold hoti hai */
+}
+
+#pondu {
+    font-weight: bolder;
+}
+
+#dadoji {
+    font-weight: lighter;
+}
+
+#lalo {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+* {
+    font-family: 'Times New Roman';
+}
+
+#outer {
+    font-size: 25px;
+}
+
+#inner {
+    font-size: 10px;
+}

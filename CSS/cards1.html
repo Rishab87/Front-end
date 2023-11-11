@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards2</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .container {
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(2,0,36);
+            background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(5,5,28,1) 35%, rgba(42,126,143,1) 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card {
+            width: 400px;
+            height: 600px;
+            background-color: white;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+        }
+        .card img{
+            border-radius: 20px 20px 0px 0px;
+            height: 35%;
+            width: inherit;
+        }
+
+        .textbox {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            width: 75%;
+            text-align: center;
+        }
+
+        .amountbox {
+            width: 80%;
+            height: 10%;
+            background-color: rgba(0,110,255,0.5);
+            display: flex;
+            border-radius: 10px;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+
+        #payment {
+            width: 80%;
+            height: 9%;
+            background-color: rgb(1, 1, 84);
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19) , 0 6px 6px rgba(0,0,0,0.23)
+        }
+        #cancelbox a{
+            text-decoration: none;
+            color: rgb(48, 44, 44);
+            font-weight: bold;
+            font-size: large;
+        }
+
+        #leftbox {
+            height: 100%;
+            display: flex;
+            width: fit-content;
+            gap: 15px;
+            align-items: center;
+        }
+
+
+        #imgbox img{
+            height: 50px;
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="caucasian-woman-s-portrait-isolated-blue-background-multicolored-neon-light.jpg" alt="music">
+            <div class="textbox">
+                <h2>Order Summary</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ex ipsam reprehenderit temporibus, a qui commodi laborum dolorum!</p>
+            </div>
+            
+            <div class="amountbox">
+                <div id="leftbox">
+                    <div id="imgbox">
+                        <img src="Itunes-music-app-icon.png" alt="itunes">
+                    </div>
+                    <div id="textamount">
+                        <p>Amount</p>
+                        <p>$99.9/year</p>
+                    </div>
+                </div>
+                <div id="rightbox">
+                    <a href="#">Change</a>
+                </div>
+            </div>
+
+            <button id="payment">
+                Proceed To Payment
+            </button>
+            <div id="cancelbox">
+                <a href="#">Cancel Order</a>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

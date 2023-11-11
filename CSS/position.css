@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+div {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    background-color: aquamarine;
+    border: 2px solid black;
+}
+
+#box3 {
+    position: sticky;
+    top: 300px; /* no effect*/
+}
+
+#box4 {
+    position: relative;
+    top: 50px;
+    left: 20px;
+}
+
+#box5 {                  /*box 5 ke liye closest postion(non static) ancestor koi nhi hai toh isliye webpage ke top se 10 px neeche chla jayega*/
+    position: absolute; /*box 5 document flow se hat jayega box 6 ,box5 ki jgah lelega*/
+    top: 20px; 
+}
+
+#box6{
+    position: fixed;
+    bottom: 0px; /*We can use fixed for header and footer so that they remain stick to top or bottom */
+    width: 100%;
+}

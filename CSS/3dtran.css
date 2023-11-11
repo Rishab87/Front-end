@@ -1,0 +1,20 @@
+div {
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: 1px solid  black;
+}
+
+.translated:hover {
+    transform: perspective(100px) translateZ(-10px); 
+    transition-duration: 2s;
+}
+.scaled{
+    margin-left: 50vw;
+}
+
+.scaled:hover {
+    transform: perspective(400px) scaleZ(4) rotateY(-60deg) rotateX(-69deg); /*why we dont need perspective in rotateZ, what is perspective, what does it do , why larger prespective value diminishes effect of transformations like scale, translate , why does scaleZ only scales element from behind not from front read on chatgpt "Perspective in 3D Transforms" chat. */
+    transition-duration: 5s; 
+
+}

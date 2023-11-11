@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F3F4F6;
+}
+
+.container{
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    width: 80%;
+    align-items: center;
+}
+
+nav a{
+    font-size: 18px;
+    text-decoration: none;
+    color:#777C85;
+    font-family: Raleway;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+#Team {
+    text-decoration: underline #4E5DC0;
+    color: #4E5DC0;
+    font-family: Raleway;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+#logo{
+    height: 82px;
+    width: 98px;
+    margin-left: 100px;
+}
+
+#project {
+    height: 54px;
+    width: 165px;
+    margin-right: 50px;
+}
+
+.Team{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.Founder{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+#vector{
+    height: 3px;    
+    width: 280px;
+    
+}
+
+.Team img{
+    height: 427px;
+    width: 570px;
+    
+}
+
+.Founder img{
+    height: 480px;
+    width: 500px;
+    order: -1;
+}
+
+.info{
+    width: 573px;
+    color: #000;
+    font-family: Raleway;
+    font-weight: 500;
+    line-height: 34px;
+    font-size: 20px;
+    
+}
+
+main {
+    margin: 80px 50px 30px 50px;
+}
+
+footer{
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+
+footer img {
+    height: 82px;
+    width: 98px;
+}
+/*use relative units to make website more responsive*/
+h3{
+    height: 32px;
+    width: 217px;
+    color: #4E5DC0;
+    line-height: 32px;
+    font-size: 16px;
+    font-family: Raleway;
+}
+
+.txt a{
+    text-decoration: none;
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32px;
+    color: #999;
+}
+
+footer p{
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32px;
+    color: #999;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#social {
+    height: 48px;
+    width: 160px;
+    
+}
+
+.txt{
+    display: flex;
+    flex-direction: column;
+}

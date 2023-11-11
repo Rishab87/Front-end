@@ -1,0 +1,43 @@
+body{
+    text-align: center;
+}
+
+div {
+    height: 100px;
+    width: 200px;
+    display: inline-block;
+    border: 2px solid black;
+}
+
+#container {
+    width: 800px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+        flex-wrap: wrap; /*wrapping ke beech main space generate hoti hai*/
+    align-items: center;
+   /* align-content: flex-end;*/ /*sara content end ki traf chla jayega aur space top ki traf*/
+/*align-content ke sath align-self work nhi kr rha tha kyunki align-content ki vjah se sare elements end main aaa gye the aur spce uper chli gyi thi beech aur aspas ki toh isliye jab uske baad align-self flex-start kr rhe the toh box3 uper nhi jaa rha tha kyunki woh jagah toh spaces ne leli hai */
+}
+
+#box1 {
+    background-color: aqua;
+}
+
+#box2 {
+    background-color: blue;
+}
+
+#box3 {
+    background-color: chartreuse;
+    align-self: flex-start;
+}
+
+#box4 {
+
+    background-color: brown;
+}
+
+#box5 {
+    background-color: crimson;
+}

@@ -1,0 +1,17 @@
+div {
+    height: 50px;
+    width: 50px;
+    background-color: black;
+}
+
+@media(width:599px){  /*isse hum aise bhi use kr skte hai ki jab width choti ho tab font size chota hojaye*/
+    div{
+        background-color: pink;
+    }
+}
+
+@media (min-width:600px){
+    div {
+        background-color: red;
+    }
+}

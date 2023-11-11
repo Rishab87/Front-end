@@ -1,0 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    height: 100px;
+    width: 100px;
+    background-image: url(vitalik-vynarchyk-0PePaKnEmuM-unsplash.jpg);
+    background-size: cover;
+    position: fixed;
+    right: 0px;
+    border-radius: 10%;
+}
+

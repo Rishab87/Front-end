@@ -1,0 +1,17 @@
+#box1 {
+    height: 100px;
+    width: 100px;
+    background-color: greenyellow;
+    font-size: 10px;
+}
+
+#box2 {
+    height: 2rem; /*2 times of 16 px*/
+    width: 30%; /* yeh 30% of 100px hoga yaani 30 px */
+    background-color: black;
+    margin-left: 10%; /*wdith parent element ki 100 px  hai uska 10% liya jayega*/
+    font-size: 2 em; /*2 times of parent's font size*/
+    width: 2 em; /*iska matlab 2 times of box2's font-size(40px)*/
+    color:aliceblue
+}
+

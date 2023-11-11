@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>property</title>
+    <style>
+        .container{
+            border: 1px solid black;
+            background-color: yellow;
+            display: grid;
+            grid-template-columns: repeat(3,100px);
+            grid-template-rows: repeat(2,100px);
+            grid-gap: 20px;
+            /* justify-content: start;
+            align-content: center; */
+            /* align-items: baseline;align-items grid ke andar cell ke element ko position krne ke liye hota hai,ismain element ka jitna content hai uss hisab se utna shrink hojayega, agar element ke andar ka content ya element ki height(hard-coded) row ke size ke barabar hai phir property kam nhi kregi */
+            place-content: center;/*shorthand notation for justify-content and align-items*/
+            /*In a grid container, the grid items are aligned in the block direction. For pages in English, block direction is downward and inline direction is left to right.*/
+            height: 700px;
+            place-items: center;/*shorthand for align and justify items*/
+        }
+        .box{
+            border: 1px solid red;
+            background-color: aqua;
+        }
+
+        #box1{
+            justify-self: start;/*content jitna hai uss hisab se shrink hojayega agar element ya content element ka column ke size jitna hai tab frk nhi pdega iss property se */
+            /* width: 100px; */
+            align-self: center;
+            place-self: start;/*shorthand for justify and align self*/
+        }
+
+        /*hw: grid and inline-grid,study content in links in slides*/
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+    </div>
+</body>
+</html>

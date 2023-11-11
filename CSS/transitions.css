@@ -1,0 +1,28 @@
+div {
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+    color: red;
+    transition-property: all; /*all matlab div ke andar jitni bhi property hai sbke uper transition apply hoga*/
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+    transition-delay: 1s;
+    transform: rotate(45def);
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    
+}
+
+div:hover { /*div ke aage jo hover use kr rkha hai woh pseudo class hai pseudo class basically is a keyword added to a selector jo alag states ko specify krta hai, isse hum koi state achieve hone pr element main change la skte hai, jaise hover krne pr color badalna */
+    background-color: aliceblue;
+    color: black;
+    font-size: 20px;
+    transform: scale(2);
+    transform: translate(500px,100px);
+    transform: skew(45deg); 
+}
+
+div:active {/*active state matlab jab kisine element pe click kia ho */
+    background-color: pink; /*click krke hold krke rkhenge toh bg color pink rhega jaise hi release krenge toh phir pink nhi rhega*/
+}

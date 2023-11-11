@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow</title>
+    <style>
+        :root{
+            --height: 500px /*to use a variable anywhere in the code we can define it in :root*/
+        } /*To create a variable with global scope, declare it inside the :root selector. The :root selector matches the document's root element.*/
+        .container {
+            background-color: beige;
+            height: var(--height);
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box {
+            --primary-color: black; /*creating a variable in css , jo variable yaha create kra hai woh idhr ke curly braces ke andar hi utilize kr skte hai ,one-use-case: suppose if we have written brown color everywhere in our css code and we want to change all of them to black , we have to change them individually , instead of this we can create a variable and use that variable wherever we want that color and if we want to change that color we have to update color just in variable.*/
+            height: 100px;
+            width: 100px;
+            border: 2px solid var(--primary-color);/*The var() function is used to insert the value of a CSS variable.*/
+            background-color: blue;
+            box-shadow: 15px 10px 10px 5px var(--primary-color) ; /*we can also use rgba to add colors */
+            /* box-shadow: 15px 10px black , 15px 18px red; We can add multiple shadows also */ 
+        }
+        p{
+            /* text-shadow: 1px 1px 3px white; */ /*by default shadow ka color black hotaaa hai , we can add multiple shadows*/
+            /* text-shadow: pink 3px 3px 2px; */
+            text-shadow: red 1px 1px , blue 2px 2px , green 3px 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"><p>giddujiiiiiiiiii</p></div>
+    </div>
+    
+</body>
+</html>

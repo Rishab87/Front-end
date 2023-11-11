@@ -1,0 +1,35 @@
+h1 {
+    color: white;
+}
+
+p {
+    color: yellow;
+}
+
+button {
+    color: blueviolet;
+    background-color: white;
+}
+
+body {
+    background-color: black;
+}
+#h2{
+    color: cyan;
+}
+
+.myclass {
+    color:chartreuse
+}
+
+#box {
+    background-color: blue;
+}
+.heading {                                   /*We can also write h1,h2,h3 {  */
+    color: red;                                                         /*color = red;*/
+}                                                                        /* }*/
+
+button {
+    
+    background-color: green;
+}
